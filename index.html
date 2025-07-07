@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Electron Sketching</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="title-bar">
+        
+        <div class="window-controls">
+            <button class="window-btn" id="minimize-btn">
+                <img src="assets/minimize-pop-pink.png " alt="Minimize" width="27" height="27">
+            </button> 
+            
+            <button class="window-btn" id="close-btn">
+                <img src="assets/close-pop-pink.png" alt="Close" width="27" height="27">
+            </button>
+            
+        </div>
+    </div>
+    
+    <div class="controlling">
+        
+        <div class="content">
+
+            <input type="file" id="file-input" style="display: none;" />
+            <button class="btn" id="upload-btn" title="Upload a photo">
+                <img src="assets/upload-btn-promisleno.png(5).png" alt="Upload">
+            </button>
+            
+            <!-- Preview Section -->
+            <div class="preview-section">
+                
+                <div class="preview-column">
+                    <h3 class="text labels">Original</h3>
+                    <img id="original-img" alt="Original Image" style="display: none;">
+                    <div class="pravoagolniceto">
+                        <div class="polaroid-placeholder" id="original-placeholder"> </div>
+                    </div>
+                </div>
+                
+                <div class="preview-column">
+                    <h3 class="text labels">Sketch</h3>
+                    <img id="sketch-img" alt="Sketch Image" style="display: none;">
+                    <div class="pravoagolniceto">
+                        <div class="polaroid-placeholder" id="sketch-placeholder"> </div>
+                    </div>
+                </div>
+            
+            </div>
+            
+            <div class="slider-section">
+                <div class="slider-labels">
+                    <label for="kernel-slider" class="text">Kernel Size:</label>
+                    <span class="text value" id="kernel-value">7</span>
+                </div>
+                
+                <input type="range" id="kernel-slider" min="1" max="101" value="7" step="2">
+                
+            </div>
+
+            <h3 class="text" id="save">Save</h3>
+            <input type="file" id="file-input" style="display: none;" />
+            <button class="btn" id="save-sketch-btn" title="Save your sketch as a PNG">
+                <img src="assets/floppy-disk.png" alt="Save Sketch">
+            </button>
+        
+        </div>
+    
+    <script src="renderer.js"></script>
+</body>
+</html>
