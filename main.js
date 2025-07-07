@@ -14,11 +14,12 @@ function createWindow() {
         minHeight: 700,
         frame: false, 
         webPreferences: {
-            preload: path.join(__dirname, 'preload.js')
+            preload: path.join(__dirname, 'src', 'preload.js')
         }
     });
 
-    win.loadFile('index.html');
+    win.loadFile(path.join('src', 'index.html'));
+    //win.loadFile(path.join(__dirname, 'src', 'index.html'));
 
     ipcMain.on('minimize-window', () => {
         win.minimize();

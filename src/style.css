@@ -180,7 +180,7 @@ body {
 
 @font-face {
     font-family: 'Space Mono';
-    src: url('assets/fonts/Doto-VariableFont_ROND\,wght.ttf') format('truetype');
+    src: url('./assets/fonts/Doto-VariableFont_ROND\,wght.ttf') format('truetype');
 }
 
 .text {
