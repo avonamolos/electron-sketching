@@ -27,7 +27,7 @@ All interface elements such as the buttons, layout, and color scheme were manual
 
 ## How to Set Up and Run the App (Development Mode)
 
-This app requires both **Node.js** (for the Electron frontend) and **Python** (for the backend image processing).  
+**Note:** This app requires both **Node.js** (for the Electron frontend) and **Python** (for the backend image processing).  
 The backend and frontend communicate through HTTP locally.
 
 ### 1. Clone the Repository:
