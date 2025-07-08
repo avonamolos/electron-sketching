@@ -12,6 +12,8 @@ function createWindow() {
         height: 700,
         minWidth: 800, 
         minHeight: 700,
+        icon: path.join(__dirname, 'src', 'assets', 'computer.ico'),
+        title: 'Cute Photo Sketch',
         frame: false, 
         webPreferences: {
             preload: path.join(__dirname, 'src', 'preload.js')
