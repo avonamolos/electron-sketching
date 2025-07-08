@@ -2,8 +2,29 @@
   "name": "electron-sketching",
   "version": "1.0.0",
   "main": "main.js",
+  "build": {
+    "appId": "com.myapp.electron-sketching",
+    "productName": "Cute Photo Sketch",
+    "directories": {
+      "buildResources": "src/assets",
+        "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "package.json",
+      "src/**/*",
+      "backend/backend.exe"
+    ],
+    "asarUnpack": ["backend/**/*"],
+    "win": {
+      "icon": "src/assets/computer.ico",
+      "target": "nsis"
+    },
+    "publish": null
+  },
   "scripts": {
     "start": "electron .",
+    "build": "electron-builder",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,6 +33,7 @@
   "description": "",
   "devDependencies": {
     "electron": "^37.2.0",
+    "electron-builder": "^26.0.12",
     "electron-reload": "^2.0.0-alpha.1"
   }
 }

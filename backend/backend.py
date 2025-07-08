@@ -47,5 +47,7 @@ async def process_image(data: ImageProcessRequest):
     # return processed image
     return {"processed_image": f"data:image/png;base64,{encoded_img}"}
 
-
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="127.0.0.1", port=8000)
 
