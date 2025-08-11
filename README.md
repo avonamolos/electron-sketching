@@ -67,6 +67,5 @@ The Electron app will launch and connect to the local backend automatically.
 - Package the entire application as a standalone `.exe` file for Windows, so that users can run the app without installing dependencies or starting the backend manually.
 - Integrate the Python backend into the `.exe` using tools like **PyInstaller** to create a bundled backend executable.
 - Automate backend startup from within the Electron app, so the backend runs silently in the background without requiring user actions.
-- Add an application icon to replace the default Electron icon.
 - General UI refinements and code cleanup.
 
